@@ -185,7 +185,7 @@ h3 {
   color: #666;
 }
 .formcon {
-  padding: 1.86666667rem 0.8rem;
+  padding: 1.86666667rem 0.8rem 0;
 }
 .formcon .form-box {
   width: 100%;
@@ -196,15 +196,15 @@ h3 {
 }
 .formcon .form-box .form-list {
   width: 100%;
-  padding-bottom: 1.06666667rem;
+  padding-bottom: 0.53333333rem;
 }
 .formcon .submit {
-  width: 10.66666667rem;
-  height: 1.6rem;
+  width: 11.2rem;
+  height: 1.86666667rem;
   background: url(../images/submit-btn.png) no-repeat center center / contain;
   color: #fff;
   text-align: center;
-  line-height: 1.6rem;
+  line-height: 1.86666667rem;
   font-size: 0.96rem;
   margin: 0 auto;
 }
