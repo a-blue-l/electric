@@ -7,6 +7,88 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/index.css?v=1">
     <script src="js/zepto.min.js"></script>
+    <!-- <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> -->
+    <!-- <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?08fbff2126b854cf44dd20dcfc7817ad";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-75805547-1', 'auto');
+        ga('send', 'pageview');
+
+        function trackEvent(category,action,opt_label,opt_value){
+            _hmt.push(['_trackEvent', category, action, opt_label, opt_value]);
+            ga('send', 'event', category, action, opt_label, opt_value);
+        }
+
+        // 链接打开量
+        trackEvent('电桩众筹','链接打开数','访问量');
+        var open_text = window.location.href,urltext,source;
+        if( open_text.indexOf("gongzhonghao") != -1 ){
+            urltext = "gongzhonghao";
+            source = "公众号";
+            trackEvent('电桩众筹','来源','公众号');
+        }
+        if( open_text.indexOf("app") != -1 ){
+            urltext = "app";
+            source = "app";
+            trackEvent('电桩众筹','来源','APP');
+        }
+        wx.config({
+
+            debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+
+            appId: "{$signPackage['appId']}", // 必填，公众号的唯一标识
+
+            timestamp: "{$signPackage['timestamp']}", // 必填，生成签名的时间戳
+
+            nonceStr: "{$signPackage['nonceStr']}", // 必填，生成签名的随机串
+
+            signature: "{$signPackage['signature']}", // 必填，签名，见附录1
+
+            jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+
+        });
+        wx.ready(function() {
+            wx.onMenuShareAppMessage({
+                title: "独乐乐不如众乐乐，充电难？有我联合电动。", // 分享标题
+                desc: "联合建桩，联合你我。", // 分享描述
+                link: "http://share.i-ev.com/index.php/Home/activity/chargpile?source=" + urltext, // 分享链接
+                imgUrl: "http://share.i-ev.com/Public/home/activity/images/sharebg.jpg", // 分享图标
+                type: 'link', // 分享类型,music、video或link，不填默认为link
+                dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+                success: function() {
+                    // 用户确认分享后执行的回调函数
+                    trackEvent('电桩众筹','分享','朋友');
+                },
+                cancel: function() {
+                    // 用户取消分享后执行的回调函数
+                }
+
+            });
+            wx.onMenuShareTimeline({
+                title: "独乐乐不如众乐乐，充电难？有我联合电动。", // 分享标题
+                link: "http://share.i-ev.com/index.php/Home/activity/chargpile?source=" + urltext, // 分享链接
+                imgUrl: "http://share.i-ev.com/Public/home/activity/images/sharebg.jpg", // 分享图标
+                success: function() {
+                    // 用户确认分享后执行的回调函数
+                    trackEvent('电桩众筹','分享','朋友圈');
+                },
+                cancel: function() {
+                    // 用户取消分享后执行的回调函数
+                }
+            });
+        });
+    </script> -->
 </head>
 <body>
 	<header class="header">
